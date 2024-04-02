@@ -1,0 +1,24 @@
+GET http://localhost:3000/bookmarks
+
+###create new bookmark
+
+POST http://localhost:3000/bookmarks
+Content-Type: application/json
+
+{
+    "title": "MDN",
+    "url": "https://mozilla.org"
+}
+
+###get one bookmark
+GET http://localhost:3000/bookmarks/id
+
+###update bookmark
+PATCH http://localhost:3000/bookmarks/id
+Content-Type: application/json
+
+{
+    "title": "MDN",
+    "url": "https://mozilla.org"
+}
+//delete bookmark
